@@ -1,0 +1,50 @@
+/* Fonts */
+
+@import url(fonts/fonts.css);
+
+
+/* Main */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: rgba(30, 30, 30, 1);
+    font-family: 'Roboto Light';
+}
+
+
+/* Demo */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+}
+
+.contrast-left {
+    background: url(images/for-demo.jpg) no-repeat top left;
+}
+
+.contrast-right {
+    background: url(images/for-demo.jpg) no-repeat top left;
+    -webkit-filter: contrast(1.5);
+            filter: contrast(1.5);
+}
